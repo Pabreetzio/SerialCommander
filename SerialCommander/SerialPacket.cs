@@ -19,7 +19,7 @@ namespace SerialCommander
             Bytes = serialBytes;
         }
 
-        public string ToString()
+        public override string ToString()
         {
             return String.Join(" ", Bytes.Select(b => b.ToString("X2")));
         }
